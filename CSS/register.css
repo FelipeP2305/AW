@@ -67,22 +67,6 @@ button:hover {
     background-color: #b30300;
 }
 
-.signup-link {
-    margin-top: 25px;
-    font-size: 15px;
-    color: #666;
-}
-
-.signup-link a {
-    color: #007bff;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.signup-link a:hover {
-    text-decoration: underline;
-}
-
 
 .logo-container {
     position: absolute;
