@@ -1,9 +1,3 @@
-<?php
-session_start();if (!isset($_SESSION['usuario'])) {
-header("Location: login.php");
-exit;
-}
-?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -18,6 +12,7 @@ exit;
         </div>
     <h1 class="welcome-text">🌟Bienvenido a mi pagina web, <?php echo $_SESSION['usuario']; ?> 🎉🌟</h1>
     <div class="status-section">
+    <p><a href="html/p.html"> </a></p>
     <p class="status-message">Has iniciado sesión correctamente.</p>
     <img src="images/Pachi_L.gif" alt="Pachirisu" class="pachi top-left">
     <img src="images/Emol.gif" alt="Pachirisu" class="pachi top-right">

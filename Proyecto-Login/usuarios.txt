@@ -1,0 +1,6 @@
+Mar:$2y$10$E2BxCNGeS.gKGNGbgmGjj.2f2fiKWtcA3lDMo1ldKoUdn4rqYYLfq
+marshyb:$2y$10$phrSnvxEhyAl1Vsb7pEgROrGKYy9E5mdquSVXpw.qTwkuEinNBu4i
+Fugaz:$2y$10$FCtMrXjVs4al2RxQt8YYbOu6b6EMNKSAH13H/ZZOqnYgk1Oi3WYay
+cosmo:$2y$10$AIpoOWuxI/l.2U8TtiTPKuQVCM.bGOQgzXiK6qZnxyh.StTW4wI.u
+
+maxwell:$2y$10$yNnSTDtJGAkE5x7DgAPkm.Wr7v7CGuhe7RQTukOGTw7UV1y8K2e6S
