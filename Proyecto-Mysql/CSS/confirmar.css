@@ -1,0 +1,70 @@
+@font-face {
+
+    font-family: 'PixelFont';
+    src: url('../plugins/pokemon-rs.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+body {
+    margin: 0;
+    padding: 0;
+
+    font-family: 'PixelFont', monospace;
+    background: linear-gradient(#a4b9f7, #2446ff);
+
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+
+    min-height: 100vh;
+    margin: 0;
+    position: relative; 
+}
+
+h1 {
+    color: #fff7b5;
+    font-family: 'PixelFont', monospace;
+    text-shadow: 0 0 10px #7c8ff2, 0 0 20px #35f8d3, 0 0 30px #e4b20dc0;
+    /*! margin-bottom: 25px; */
+    font-size: 28px;
+    font-weight: bold;
+}
+
+a {
+    display: inline-block;
+    color: greenyellow;
+    text-decoration: none;
+    font-size: 1.5em;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #a3c475;
+    text-decoration: underline;
+}
+
+.container {
+    max-width: 600px;
+    padding: 20px;
+}
+
+.centered-gif {
+    display: block; 
+    margin: 0 auto 40px auto;
+    max-width: 150px;
+    height: auto;
+}
+.message-success {
+    font-size: 2.2em;
+    font-weight: bold;
+    margin: 5px 0; 
+}
+
+.container h1 {
+    font-size: 2.2em;
+    font-weight: bold;
+    margin: 5px 0;
+}

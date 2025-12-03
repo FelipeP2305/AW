@@ -1,12 +1,12 @@
 body {
     font-family: Arial, sans-serif;
-    background: linear-gradient(#fff3b0, #FFADAD);
+    background: linear-gradient(#b0fbff,#d0adff);
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
     margin: 0;
-    position: relative; 
+    position: relative;
 }
 
 p {
@@ -15,23 +15,21 @@ p {
 }
 
 .login-container {
-    background-color: #ff8c8c;
+    background-color: #8c9dff;
     padding: 30px 40px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
     width: 350px;
 }
-
 h1 {
-    color: #5b6bfc;
-    text-shadow: 0 0 10px #f3f183, 0 0 20px #f3f183, 0 0 30px #457b9d80;
+    text-align: center; 
+    font-size: 2em;
+    color: #f85454; 
+    text-shadow: 0 0 10px #f3f183, 0 0 20px #f3f183, 0 0 30px rgba(69, 123, 157, 0.5);
     margin-bottom: 25px;
-    font-size: 28px;
-    font-weight: bold;
 }
-
-.form-group {
+form-group {
     margin-bottom: 20px;
     text-align: left;
 }
@@ -42,7 +40,6 @@ label {
     color: #555;
     font-size: 16px;
 }
-
 input[type="text"],
 input[type="password"] {
     width: calc(100% - 20px); 
@@ -54,7 +51,7 @@ input[type="password"] {
 }
 
 button {
-    background-color: #78b3ff;
+    background-color: #ff0400;
     color: white;
     padding: 12px 20px;
     border: none;
@@ -67,7 +64,7 @@ button {
 }
 
 button:hover {
-    background-color: #003fb3;
+    background-color: #b30300;
 }
 
 .signup-link {

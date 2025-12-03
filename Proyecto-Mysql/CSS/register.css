@@ -1,110 +1,103 @@
+@font-face {
+
+    font-family: 'PixelFont';
+    src: url('../plugins/pokemon-rs.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
-    font-family: Arial, sans-serif;
-    background: linear-gradient(#b0fbff,#d0adff);
+    background-image: url('../images/PichuNT.png');
+    background-repeat: no-repeat;
+    background-position: center top; /* Ajusta este valor (50px) hasta que el círculo quede donde quieres */
+    background-size: contain; /* Para que la imagen se muestre en su tamaño original */
+    background-color: #FB8A38;
+    font-family: 'PixelFont', monospace; 
+    color: white;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    height: 100vh;
     margin: 0;
-    position: relative;
-}
-
-p {
-    margin-bottom: 25px;
-    font-weight: bold;
-}
-
-.login-container {
-    background-color: #8c9dff;
-    padding: 30px 40px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
-    width: 350px;
 }
+
 h1 {
-    text-align: center; 
-    font-size: 2em;
-    color: #f85454; 
-    text-shadow: 0 0 10px #f3f183, 0 0 20px #f3f183, 0 0 30px rgba(69, 123, 157, 0.5);
-    margin-bottom: 25px;
-}
-form-group {
+    font-size: 2.5em; 
+    text-shadow: 2px 2px 0px #fbc393;
     margin-bottom: 20px;
-    text-align: left;
+}
+
+form {
+    background-color: #fbfbfb; 
+    border: 4px solid #304961; 
+    box-shadow: 6px 6px 0px #1f3040; 
+    padding: 30px;
+    border-radius: 4px;
+    width: 205px;
+    outline: 2px solid #aabac3;
+    outline-offset: -6px;
+    margin-top: 20px;
 }
 
 label {
     display: block;
-    margin-bottom: 8px;
-    color: #555;
-    font-size: 16px;
-}
-input[type="text"],
-input[type="password"] {
-    width: calc(100% - 20px); 
-    padding: 12px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    font-size: 16px;
-    box-sizing: border-box; 
-}
-
-button {
-    background-color: #ff0400;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 17px;
-    transition: background-color 0.3s ease;
-    width: 100%;
     margin-top: 10px;
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 5px;
+    text-align: center
 }
 
-button:hover {
-    background-color: #b30300;
+input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box; 
+    border: 2px solid #333;
+    background-color: #E0E0E0; 
+    font-size: 1em;
+    font-family: monospace; 
+    border-top-color: #808080;
+    border-left-color: #808080;
+    border-bottom-color: #FFF;
+    border-right-color: #FFF;
 }
 
-.signup-link {
-    margin-top: 25px;
-    font-size: 15px;
-    color: #666;
+button[type="submit"] {
+    font-family: 'PixelFont', monospace;
+    font-size: 1.5em;
+    padding: 10px 20px;
+    border-radius: 4px;
+    margin-top: 20px;
+    cursor: pointer;
+    color: #494949;
+    border: 4px solid #cbcbcb;
+    background-color: #fbfbfb;
+    box-shadow: 0 0 0 3px #303049;
+    transition: all 0.1s ease-in-out;
 }
 
-.signup-link a {
-    color: #007bff;
+button[type="submit"]:hover {
+    background-color: #fbfbfb;
+    box-shadow: 0 0 0 3px #f30000, 4px 4px 0px rgba(0, 0, 0, 0.7);
+    transform: translate(-4px, -4px);
+}
+
+p a {
+    color: #002fa1;
     text-decoration: none;
-    font-weight: bold;
+    font-size: 1.1em;
+    border-bottom: 2px dotted #002fa1;
+    padding-bottom: 2px;
 }
 
-.signup-link a:hover {
-    text-decoration: underline;
+p a:hover {
+    color: #ff503b;
+    border-bottom: 2px solid #ff503b;
 }
-
-
-.logo-container {
-    position: absolute;
-    bottom: 20px; 
-    right: 20px; 
-    width: 150px; 
-    height: auto; 
-    z-index: 100; 
-}
-
 .logo-container img {
-    max-width: 100%; 
+    max-width: 100%;
     height: auto;
     display: block;
-}
-
-a {
-    color: greenyellow;
-    text-decoration: none;
-    cursor: pointer;
-    font-size: 1.1em;
-}
-a:hover {
-    text-decoration: underline;
 }

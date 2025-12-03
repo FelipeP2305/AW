@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Login</title>
+    <title>Inicio de sesión</title>
     <link rel="stylesheet" href="CSS/login.css">
 </head>
 <body>
@@ -15,5 +15,8 @@
     <button type="submit">Entrar</button>
     </form>
     <p>¿No tienes cuenta? <a href="registro.php">Regístrate aquí</a></p>
+    </div>
+    <div class="logo-container">
+    <img src="images/Emol2.gif" alt="Logo"> </div>
 </body>
 </html>
