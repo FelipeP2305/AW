@@ -8,8 +8,9 @@
     </head>
     <body>
     <div class="container">
-        <h1>Gestión de Usuarios</h1>
-        <a class="btn" href="list.php">Ir al CRUD</a>
+        <h1>Bienvenido a la Gestión de Usuarios UserManager</h1>
+        <a href="login.php">Inicio de sesión</a>
+        <a href="register.php">Registrarse</a>
     </div>
     </body>
 </html>
