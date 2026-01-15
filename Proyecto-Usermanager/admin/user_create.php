@@ -1,28 +1,30 @@
 <?php
-session_start();
+require_once '../config/admin_session.php';
 ?>
-
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <title>Registro</title>
-    <link rel="stylesheet" href="assets/css/style.css">
-    <script src="assets/js/validacion.js" defer></script>
+<meta charset="UTF-8">
+<title>Crear usuario</title>
+<link rel="stylesheet" href="../assets/css/style.css">
+<script src="../assets/js/validacion.js" defer></script>
 </head>
+
 <?php if (isset($_GET['error']) && $_GET['error'] === 'email_exists'): ?>
 <script>
 document.addEventListener("DOMContentLoaded", () => {
     document.getElementById("errorEmail").textContent =
-    "Este correo ya está registrado";
+    "Este correo ya está en uso";
 });
 </script>
 <?php endif; ?>
+
 <body>
 
-<h2>Registro de Usuario</h2>
+<div class="form-container">
+<h1>Nuevo usuario</h1>
 
-<form id="registerForm" action="process/procesar_register.php" method="POST">
+<form action="../process/procesar_user_create.php" method="POST" id="userForm">
 
     <label>Nombre</label>
     <input type="text" name="nombre" id="nombre">
@@ -36,13 +38,17 @@ document.addEventListener("DOMContentLoaded", () => {
     <input type="password" name="password" id="password">
     <small class="error" id="errorPassword"></small>
 
-    <button type="submit">Registrarse</button>
+    <label>Rol</label>
+    <select name="rol">
+        <option value="user">Usuario</option>
+        <option value="admin">Administrador</option>
+    </select>
+
+    <button type="submit" class="btn">Guardar</button>
 </form>
 
-<script src="assets/js/validacion.js"></script>
-
-
-<div id="errores" style="color:red;"></div>
+<a href="users_list.php">Volver</a>
+</div>
 
 </body>
 </html>

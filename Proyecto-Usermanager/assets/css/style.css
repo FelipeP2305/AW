@@ -1,0 +1,86 @@
+@font-face {
+
+    font-family: 'wii';
+    src: url('wiiu.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-color: #F09D7D;
+    font-family: 'wii', monospace;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    text-align: center;
+}
+h1 {
+    font-family: 'wii', monospace;
+    font-size: 2.5em;
+    text-shadow: 2px 2px 0px #ff494980;
+    margin-bottom: 20px;
+}
+h2 {
+    font-family: 'wii', monospace;
+    font-size: 2.5em;
+    text-shadow: 2px 2px 0px #ff494980;
+    margin-bottom: 20px;
+}
+
+.container a {
+    color: #2d21b1;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+.container a:visited {
+    color: #000000;
+}
+.dashboard-actions {
+    display: flex;
+    gap: 15px;
+}
+.error {
+    color: #fa5b5b;
+    font-size: 0.85em;
+    display: block;
+    margin-bottom: 10px;
+}
+
+input:invalid {
+    border: 1px solid #ff0000;
+}
+
+.success {
+    background: #d4edda;
+    color: #155724;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #FFD05E;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    /*! transition: background-color 0.3s ease; */
+}
+
+
+.btn.admin {
+    background-color: #ffffff;
+}
+
+.btn.admin:visited {
+    background-color: #dddddd;
+}
+
+.btn:hover {
+    filter: brightness(1.1);
+    border-bottom: none;
+}

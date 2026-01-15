@@ -1,30 +1,30 @@
 <?php
 session_start();
 ?>
-
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <title>Login</title>
-    <link rel="stylesheet" href="css/style.css">
-    <script src="js/validacion.js" defer></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/validacion.js" defer></script>
 </head>
 <body>
 
 <h2>Iniciar Sesión</h2>
 
-<form action="procesar_login.php" method="POST" id="formLogin">
+<form action="process/procesar_login.php" method="POST" id="loginForm">
+
     <label>Email:</label>
-    <input type="email" name="email" id="loginEmail">
+    <input type="email" name="email" id="email">
+    <small class="error" id="errorEmail"></small>
 
     <label>Contraseña:</label>
-    <input type="password" name="password" id="loginPassword">
+    <input type="password" name="password" id="password">
+    <small class="error" id="errorPassword"></small>
 
     <button type="submit">Entrar</button>
 </form>
-
-<div id="erroresLogin" style="color:red;"></div>
 
 </body>
 </html>

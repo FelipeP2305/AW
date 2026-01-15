@@ -1,8 +1,8 @@
 <?php
 $host = "localhost";
 $dbname = "usermanager";
-$user = "root";
-$pass = "marco2004";
+$user = "felipe";
+$pass = "1234";
 
 try {
     $pdo = new PDO(

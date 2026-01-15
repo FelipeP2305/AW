@@ -1,28 +1,38 @@
 <?php
-require "includes/auth.php";
-require_login(); // obliga a estar logado
+require_once 'config/session.php';
+
+$user = $_SESSION['user'];
 ?>
 
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <title>Dashboard</title>
-    <link rel="stylesheet" href="css/style.css">
+<meta charset="UTF-8">
+<title>Dashboard</title>
+<link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
 
-<h2>Bienvenido, <?php echo htmlspecialchars($_SESSION['user_nombre']); ?></h2>
+<div class="container">
+<h1>Bienvenido, <?= htmlspecialchars($user['nombre']) ?></h1>
 
-<p>Has iniciado sesión correctamente.</p>
+<p>
+Has iniciado sesión como:
+<strong><?= htmlspecialchars($user['rol']) ?></strong>
+</p>
 
-<!-- Mostrar zona Admin si el usuario es admin -->
-<?php if ($_SESSION['user_rol'] === 'admin'): ?>
-    <a href="admin/users_list.php">Gestión de Usuarios (Admin)</a>
+<div class="dashboard-actions">
+
+<a class="btn" href="logout.php">Cerrar sesión</a>
+
+<?php if ($user['rol'] === 'admin'): ?>
+<a class="btn admin" href="admin/users_list.php">
+Gestión de usuarios
+</a>
 <?php endif; ?>
 
-<br><br>
-<a href="logout.php">Cerrar sesión</a>
+</div>
+</div>
 
 </body>
 </html>
