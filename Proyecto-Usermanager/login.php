@@ -25,6 +25,11 @@ session_start();
 
     <button type="submit">Entrar</button>
 </form>
+<?php if (isset($_GET['error']) && $_GET['error'] === 'login'): ?>
+<div class="error">
+    Email o contraseña incorrectos
+</div>
+<?php endif; ?>
 
 </body>
 </html>
